@@ -58,3 +58,5 @@ The OpenShift web console username/password: admin admin
 [Openshift Developers](https://developers.openshift.com/)
 
 [Red Hat Container Registry](https://access.redhat.com/containers)
+
+[Openshift Enterprise 3.0 Documentation](https://docs.openshift.com/enterprise/3.0/welcome/index.html)
