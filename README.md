@@ -1,7 +1,7 @@
-#Setup Instructions
+# Setup Instructions
 The following provides generalized commands for Red Hat CDK for OpenShift.
 
-##Virtualization Setup
+## Virtualization Setup
 Install virtualization software.
 
 `sudo yum groupinstall "Virtualization Host"`
@@ -9,7 +9,7 @@ Install virtualization software.
 `systemctl enable libvirtd.service`
 `systemctl start libvirtd.service`
 
-##Vagrant Setup
+## Vagrant Setup
 Install vagrant.
 
 `mkdir ~/Downloads`
@@ -17,7 +17,7 @@ Install vagrant.
 `wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.rpm`
 `rpm -ivh vagrant_1.9.1_x86_64.rpm`
 
-##Vagrant Box Configuration
+## Vagrant Box Configuration
 Initialize vagrant.
 
 `mkdir ~/boxes`
@@ -29,7 +29,7 @@ Initialize vagrant.
 `vagrant plugin install vagrant-service-manager --plugin-version 1.4.0`
 `vagrant up`
 
-##Openshift Service Initialization
+## Openshift Service Initialization
 Execute the following within the vagrant box.
 
 `vagrant ssh`
@@ -37,14 +37,14 @@ Execute the following within the vagrant box.
 `sudo su -c systemctl start openshift.service`
 `exit`
 
-##Openshift Shell Environment Configuration
+## Openshift Shell Environment Configuration
 Execute the following on the virtualization host.
 
 `eval "$(vagrant service-manager env openshift)"`
 
-##Openshift Access and Documentation
+## Openshift Access and Documentation
 The OpenShift web console username/password: admin admin
 
-###Resources
+### Resources
 [Openshift Developers](https://developers.openshift.com/)
 [Red Hat Container Registry](https://access.redhat.com/containers)
